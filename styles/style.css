@@ -1,2 +1,58 @@
 
+body {
+    background-color: #f07c4e;
+    font-family: Mukta, Helvetica, sans-serif;
+}
 
+img {
+    width: 350px;
+}
+
+main {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.todo-list {
+    border: rgb(80, 80, 80) 1px solid;
+    width: 40%;
+    background-color: rgb(170, 207, 248);
+}
+
+form {
+    border-bottom: rgb(80, 80, 80) 1px solid;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+input {
+    width: 80%;
+    height: 3rem;
+    background-color: rgb(221, 221, 221);
+    border:rgb(80, 80, 80) solid 1px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    
+}
+
+button {
+    height: 3rem;
+    width: 15%;
+    margin-left: 10px;
+    background-color: rgb(221, 221, 221);
+    border:rgb(80, 80, 80) solid 1px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+
+}
+
+.todo-list-ul {
+    list-style-image: circle;
+}
+
+.colors {
+    font-family: 'IBM Plex Serif', Georgia, serif;
+}
