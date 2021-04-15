@@ -6,6 +6,7 @@ import { createUser, loginAndRedirect, userExists, usernameAndPasswordMatch } fr
 
 // set event listeners to update state and DOM
 const form = document.querySelector('form');
+const errorContainer = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ form.addEventListener('submit', (e) => {
         if (usernameAndPasswordMatch(username, password)) {
             //loginAndRedirect(username);
         } else {
-            alert ('username or pasword are invalid');
+            errorContainer.classList.add('display');
         }
     
     } else {

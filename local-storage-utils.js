@@ -62,3 +62,13 @@ export function addToDo(todo) {
 
     updateUser(user);
 }
+
+export function completeToDo(message) {
+    const user = getUser();
+
+    const matchingToDo = user.todos.find((todo) => message === todo.todo);
+
+    matchingToDo.completed = true;
+
+    updateUser(user);
+}

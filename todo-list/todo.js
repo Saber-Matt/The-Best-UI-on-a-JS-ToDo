@@ -12,6 +12,8 @@ toDoForm.addEventListener('submit', (e) => {
     renderLi(toDo);
     renderTodos();
 
+    toDoForm.reset();
+
 });
 
 renderTodos();
