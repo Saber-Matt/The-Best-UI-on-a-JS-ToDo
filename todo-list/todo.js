@@ -9,7 +9,7 @@ toDoForm.addEventListener('submit', (e) => {
     const toDo = formData.get('todo');
     addToDo(toDo);
 
-    renderLi();
+    renderLi(toDo);
     renderTodos();
 
 });
