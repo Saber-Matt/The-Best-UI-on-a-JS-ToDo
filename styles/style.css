@@ -19,7 +19,7 @@ main {
     width: 40%;
     background-color: #ffa683;
     border-radius: 20px;
-    border: 2px solid rgb(247, 189, 119);
+    border: 10px solid rgb(247, 189, 119);
     border-top-color: #c25f03;
     border-left-color: #c25f03;
 }
