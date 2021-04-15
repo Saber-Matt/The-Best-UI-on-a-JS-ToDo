@@ -13,13 +13,11 @@ export function createUser(username, password) {
 export function getUser() {
     const stringUser = localStorage.getItem(USER);
     const user = JSON.parse(stringUser);
-
     return user;
 }
 
 export function updateUser(user) {
     const stringUser = JSON.stringify(user);
-
     localStorage.setItem(USER, stringUser);
 }
 
@@ -37,4 +35,18 @@ export function usernameAndPasswordMatch(username, password) {
     if (!userExists(username) || userInLocalStorage.password !== password) return false;
 
     return true;
+}
+
+export function login(username) {
+    localStorage.setItem(LOGGED_IN, username);
+}
+
+export function logout() {
+    localStorage.setItem(LOGGED_IN, '');
+}
+
+export function loginAndRedirect(username) {
+    login(username);
+
+    window.location = '../todo-list';
 }
