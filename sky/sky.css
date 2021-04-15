@@ -1,0 +1,33 @@
+body {
+    background-image: url('../assets/sky.jpeg');
+    background-repeat: no-repeat;
+    background-position:;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.persimmon {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Serif', Georgia, Serif;
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 190px;
+    margin-left: 130px;
+}
+
+a {
+    text-decoration: none;
+    color: lightsalmon;
+}
+
+.persimmon:hover {
+    background-color: lightsalmon;
+    color: tomato;
+}

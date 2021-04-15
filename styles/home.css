@@ -15,12 +15,37 @@ form {
 
 input {
     margin: 10px;
+    padding-left: 10px;
+    background-color: #f09876;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(192, 82, 39);
+    font-family: Mukta;
 }
 
 button {
     margin: 10px;
+    width: 30%;
+    background-color: #f09876;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(192, 82, 39);
+    font-family: Mukta;
+    color:rgb(192, 82, 39);
 }
 
+button:hover {
+    color:rgb(255, 206, 187);
+
+}
+
+button:focus {
+    outline: none;
+    border: none;
+
+}
 h1 {
     font-family: 'IBM Plex Serif', Georgia, serif;
+}
+
+h2 {
+    color: #ff8859;
 }
