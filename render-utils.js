@@ -1,9 +1,10 @@
 import { getUser } from './local-storage-utils.js';
 
-export function renderLi(todo) {
+
+export function renderLi(toDo) {
     const li = document.createElement('li');
-    li.textContent = todo.todo;
-   
+    li.textContent = toDo.todo;
+
     return li;
 }
 
@@ -14,6 +15,7 @@ export function renderTodos() {
 
     user.todos.forEach(todo => {
         const li = renderLi(todo);
+        ul.textContent = '';
 
         ul.append(li);
     });
