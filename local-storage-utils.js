@@ -50,3 +50,15 @@ export function loginAndRedirect(username) {
 
     window.location = '../todo-list';
 }
+
+export function addToDo(todo) {
+    const newToDo = {
+        todo: todo,
+        completed: false,
+
+    };
+    const user = getUser();
+    user.todos.push(newToDo);
+
+    updateUser(user);
+}
