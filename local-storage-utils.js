@@ -48,7 +48,7 @@ export function logout() {
 export function loginAndRedirect(username) {
     login(username);
 
-    window.location = '../todo-list/index.html';
+    window.location = './todo-list/index.html';
 }
 
 export function addToDo(todo) {
